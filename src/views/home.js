@@ -41,12 +41,12 @@ const Home = (props) => {
         </div>
       </header>
       <div className="home-hero">
-        <div className="home-container1">
+        <div className="home-container01">
           <span className="home-text">Hi, I&apos;m</span>
           <h1 className="home-text01">Christopher</h1>
           <img
             src="/external/dsc03628-crop-1500h.jpg"
-            className="home-image1"
+            className="home-image01"
           />
           <span className="home-text02">
             Social studies educator, passionate about helping students connect
@@ -61,7 +61,7 @@ const Home = (props) => {
           <br></br>
         </h1>
         <div className="home-separator1"></div>
-        <span>
+        <span className="home-text06">
           <span>
             Greetings! I’m Christopher Walton, from beautiful Denver, Colorado.
             After graduating from the University of Colorado I relocated to
@@ -109,7 +109,7 @@ const Home = (props) => {
           <br></br>
         </h1>
         <div className="home-separator2"></div>
-        <div className="home-container2">
+        <div className="home-container02">
           <FeatureCard31
             title="2019"
             action="Houston, Texas"
@@ -165,78 +165,102 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-features2">
-        <h1 className="home-text28">
-          <span>Example instructional materials</span>
-          <br></br>
-        </h1>
-        <div className="home-container3">
-          <strong className="home-text31">
-            Unit 3: The Wealth and Poverty of Nations
-          </strong>
-        </div>
-        <div className="home-container4">
-          <a
-            href="https://1drv.ms/w/s!AkbtihXnoK9zhb8cBUqXeBWH6GP5Hw"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="home-link1"
-          >
-            <p className="home-text32">Unit planner</p>
-          </a>
-          <a
-            href="https://docs.google.com/presentation/d/11BU-RC-NxgEPsk_ymeI52H8JU9AKXD5JweK9rIXc88A/edit?usp=sharing"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="home-link2"
-          >
-            <p className="home-text33">Unit intro. class slides </p>
-          </a>
-          <a
-            href="https://docs.google.com/document/d/1bn5Ok2mDcdN9hRlAWpdjSP7GJezc3VSfxF5Nf4bcTTw/edit?usp=sharing"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="home-link3"
-          >
-            <p className="home-text34">
-              Global Political and Economic Inequity
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: ' ',
-                }}
+      <div className="home-steps">
+        <h1 className="home-text28">Example instructional materials</h1>
+        <div className="home-separator3"></div>
+        <div className="home-container03">
+          <div className="home-container04">
+            <h1 className="home-text29">
+              Unit 3: The Wealth and Poverty of Nations
+            </h1>
+          </div>
+          <div className="home-container05">
+            <div className="home-step">
+              <h2 className="home-text30">Unit planner</h2>
+              <img
+                alt="image"
+                src="/external/plan-200h.png"
+                className="home-image02"
               />
-            </p>
-          </a>
-          <a
-            href="https://docs.google.com/presentation/d/1mJmJwTYqt7dDhYhMZp-Blo91c03oP44hM0hAV8VY4Xg/edit?usp=sharing"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="home-link4"
-          >
-            <p className="home-text35">T6: class slides</p>
-          </a>
-          <a
-            href="https://docs.google.com/document/d/1XECTrxfITwwnk07FPu7CPnPt2X5aYXtx6Dpl0LAzjPw/edit?usp=sharing"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="home-link5"
-          >
-            <p className="home-text36">
-              T6: research and presentation class assignment 
-            </p>
-          </a>
+              <a
+                href="https://1drv.ms/w/s!AkbtihXnoK9zhb8cBUqXeBWH6GP5Hw"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link1"
+              >
+                <strong className="home-text31">MYP unit planner</strong>
+              </a>
+            </div>
+            <div className="home-step1">
+              <h2 className="home-text32">Facilitator slides</h2>
+              <img
+                alt="image"
+                src="/presentations-200h.png"
+                className="home-image03"
+              />
+              <a
+                href="https://docs.google.com/presentation/d/11BU-RC-NxgEPsk_ymeI52H8JU9AKXD5JweK9rIXc88A/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link2"
+              >
+                <p className="home-text33">Unit intro. class slides </p>
+              </a>
+              <a
+                href="https://docs.google.com/presentation/d/1mJmJwTYqt7dDhYhMZp-Blo91c03oP44hM0hAV8VY4Xg/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link3"
+              >
+                <p className="home-text34">Topic 6: class slides</p>
+              </a>
+            </div>
+            <div className="home-step2">
+              <h2 className="home-text35">Assignments</h2>
+              <img
+                alt="image"
+                src="/external/assignment-200h.png"
+                className="home-image04"
+              />
+              <a
+                href="https://docs.google.com/document/d/1bn5Ok2mDcdN9hRlAWpdjSP7GJezc3VSfxF5Nf4bcTTw/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link4"
+              >
+                <p className="home-text36">
+                  Global Political and Economic Inequity
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </p>
+              </a>
+              <a
+                href="https://docs.google.com/document/d/1XECTrxfITwwnk07FPu7CPnPt2X5aYXtx6Dpl0LAzjPw/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link5"
+              >
+                <p className="home-text37">
+                  Topic 6: research and presentation class assignment 
+                </p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="home-features3">
-        <h1 className="home-text37">
+      <div className="home-features2">
+        <h1 className="home-text38">
           <span>Campus enrichment </span>
           <br></br>
         </h1>
-        <div className="home-separator3"></div>
+        <div className="home-separator4"></div>
         <div className="home-testimonial-card">
           <div className="home-testimonial">
-            <div className="home-container5">
-              <span className="home-text40">Woods project campus partner</span>
+            <div className="home-container06">
+              <p className="home-text41">Woods project campus partner</p>
               <span>
                 The Woods Project is a not-for-profit dedicated to helping
                 students build social and emotional skills through outdoor
@@ -248,7 +272,7 @@ const Home = (props) => {
                 />
               </span>
               <span>Duties included: </span>
-              <div className="home-container6">
+              <div className="home-container07">
                 <ul className="list">
                   <li className="home-li list-item">
                     <span>Organizing after school club activities</span>
@@ -266,17 +290,14 @@ const Home = (props) => {
           <img
             alt="profile"
             src="/external/cf86d9bc-cd64-4c49-99b7-85bc93eb08a7-400w.jpg"
-            className="home-image2"
+            className="home-image05"
           />
         </div>
-        <div className="home-features4">
-          <div className="home-container7">
-            <div className="home-container8">
+        <div className="home-features3">
+          <div className="home-container08">
+            <div className="home-container09">
               <div className="home-feature-card3">
-                <svg viewBox="0 0 1024 1024" className="home-icon2">
-                  <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"></path>
-                </svg>
-                <h2 className="home-text46">
+                <h2 className="home-heading">
                   Elected member campus Shared Decision-Making Committee
                   <span
                     dangerouslySetInnerHTML={{
@@ -318,9 +339,6 @@ const Home = (props) => {
                 </ul>
               </div>
               <div className="home-feature-card4">
-                <svg viewBox="0 0 1024 1024" className="home-icon4">
-                  <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"></path>
-                </svg>
                 <h2 className="home-text52">
                   Elected member campus Shared Decision-Making Committee
                   <span
@@ -364,6 +382,106 @@ const Home = (props) => {
                 description="In the role of an Extended Essay mentor, I assisted IB Diploma candidates in developing and completing their IB Extended Essays."
                 rootClassName="rootClassName3"
               ></FeatureCard4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="home-steps1">
+        <h1 className="home-text57">Technology</h1>
+        <div className="home-separator5"></div>
+        <div className="home-container10">
+          <div className="home-container11">
+            <div className="home-container12">
+              <p className="home-text58">
+                <span>Favorites for</span>
+                <br></br>
+                <span>student engagement</span>
+                <br></br>
+              </p>
+              <div className="home-container13">
+                <img
+                  alt="image"
+                  src="/external/peardeck-200h.png"
+                  className="home-image06"
+                />
+                <img
+                  alt="image"
+                  src="/external/nearpod-200h.jpg"
+                  className="home-image07"
+                />
+                <img
+                  alt="image"
+                  src="/external/genially-200h.webp"
+                  className="home-image08"
+                />
+                <img
+                  alt="image"
+                  src="/external/googlefored1-200h.png"
+                  className="home-image09"
+                />
+              </div>
+            </div>
+            <div className="home-container14">
+              <p className="home-text63">
+                <span>
+                  Used for course
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <br></br>
+                <span>management</span>
+              </p>
+              <div className="home-container15">
+                <img
+                  alt="image"
+                  src="/external/apclassroom-200h.png"
+                  className="home-image10"
+                />
+                <img
+                  alt="image"
+                  src="/external/managebac-dev-fa6745ac-dev-managebac%20square-200h.png"
+                  className="home-image11"
+                />
+                <img
+                  alt="image"
+                  src="/external/canvasslogo-200h.png"
+                  className="home-image12"
+                />
+                <img
+                  alt="image"
+                  src="/external/google-classroom-logo-200h.png"
+                  className="home-image13"
+                />
+              </div>
+            </div>
+            <div className="home-container16">
+              <p className="home-text67">
+                <span>
+                  Languages and
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <br></br>
+                <span>libraries I program</span>
+              </p>
+              <div className="home-container17">
+                <img
+                  alt="image"
+                  src="/external/css3-html5-javascript-logo-200h.png"
+                  className="home-image14"
+                />
+                <img
+                  alt="image"
+                  src="/external/mern-200h.png"
+                  className="home-image15"
+                />
+              </div>
             </div>
           </div>
         </div>
